@@ -9,7 +9,7 @@ class Person:
 
 
 def create_person_list(people: list) -> list:
-
+    Person.people.clear()
     person_instances = [Person(person["name"], person["age"])
                         for person in people]
 
